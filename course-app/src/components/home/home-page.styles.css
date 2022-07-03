@@ -1,0 +1,28 @@
+.home-container {
+    background-color: rgb(224, 234, 243);
+    color: #f5f5f5;
+    margin-top: 20px;
+  }
+.home-container h2{
+    margin: 4px;
+    color:blue;
+    font-style: italic;
+}
+.home-container p{
+  color: black;
+  margin: 4px;
+  font-weight: 600;
+}
+
+.main-image {
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+}

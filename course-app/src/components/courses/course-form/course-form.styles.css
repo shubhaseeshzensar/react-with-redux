@@ -1,0 +1,55 @@
+
+.form-container{
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.control {
+  margin: 0.5rem 0;
+  border-color: #d2088e;
+}
+
+.control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.control input {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  font: inherit;
+  line-height: 1.5rem;
+  padding: 0 0.25rem;
+}
+
+.control input:focus {
+  outline: none;
+  background: #fad0ec;
+  border-color: #8b005d;
+}
+.action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.button {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #8b005d;
+  color: white;
+  background: #c54c9d;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background: #ac0e77;
+  border-color: #ac0e77;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+}

@@ -1,0 +1,14 @@
+/* <img
+        src="'https://i.ibb.co/4W2DGKm/floral-blouse.png'"
+        className="img-fluid"
+        alt="Responsive image"
+      /> */
+
+.about-container {
+  background-color: rgb(224, 234, 243);
+  background-image: url("../../assets/library.jpg");
+  color: #ffffff;
+  height: 34rem;
+  background-size: cover;
+  margin-top: 20px;
+}

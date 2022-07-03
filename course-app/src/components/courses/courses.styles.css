@@ -1,0 +1,8 @@
+.courses-container{
+  margin-top: 20px;
+}
+.courses-container h2{
+    align-self: center;
+    color: maroon;
+    margin: 0 30%;
+}
