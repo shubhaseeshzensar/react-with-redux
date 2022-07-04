@@ -3,8 +3,8 @@ import { COURSE_ACTION_TYPES } from "./course.type";
 
 
 const COURSE_INITIAL_STATE = {
-  courses: null,
   isCourseShown: false,
+  courses: []
 };
 
 export const courseReducer = (state = COURSE_INITIAL_STATE, action) => {

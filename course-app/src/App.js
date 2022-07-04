@@ -7,22 +7,18 @@ import PageNotFound from "./components/page-not-found/page-not-found.component";
 import Courses from "./components/courses/courses.component";
 import About from "./components/about/about-page.component";
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setCourse } from "./store/course/course.action";
-import { selectCourses } from "./store/course/course.selector";
-
 const baseURL = `http://localhost:5000/api/courses`;
 
 
 function App() {
   const dispatch = useDispatch()
-  const courses = useSelector(selectCourses)
 
   useEffect(()=>{
     axios.get(baseURL).then(
       res => {
-        console.log(res.data)
-        dispatch(setCourse(res.data, courses))
+        dispatch(setCourse(res.data, null))
       }
     )
   },[])

@@ -1,10 +1,14 @@
 import { COURSE_ACTION_TYPES } from "./course.type";
 import { createAction } from "../../utils/reducer-utils";
 
+
 export const setIsCoursesShown = (boolean) =>
   createAction(COURSE_ACTION_TYPES.SET_IS_COURSE_SHOWN, boolean);
 
 const addCourse = (courses, courseToAdd) => {
+  if(courseToAdd === null){
+    return [...courses]
+  }
   return [...courses, { ...courseToAdd }];
 };
 

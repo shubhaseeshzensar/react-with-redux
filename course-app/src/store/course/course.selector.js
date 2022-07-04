@@ -14,3 +14,7 @@ export const selectIsCoursesShown = createSelector(
   (course) => course.isCourseShown
 )
 
+export const selectInitialCourses = createSelector(
+  [selectCourseReducer],
+  (course) => course.setCourse
+)
